@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora de Pagamento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='pagamento.js'></script>
+</head>
+
+<style>
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+    }
+</style>
+
+<body>
+    <h1><u># Questão incompleta #</u></h1><br>
+
+    <div class="container">
+        <h2>Calculadora de Pagamento de Produto</h2>
+
+        <label>Forma de pagamento: </label>
+        <select id="condicao">
+            <option>Escolha</option>
+            <option value="1">1- À vista em dinheiro ou cheque (10% de desconto)</option>
+            <option value="2">2- À vista no cartão (15% de desconto)</option>
+            <option value="3">3- Em duas vezes (preço normal, sem juros)</option>
+            <option value="4">4- Em duas vezes com 10% de juros</option>
+        </select><br><br>
+
+        <button onclick="calcular()">Calcular</button>
+    
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora de Calorias</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='calorias.js'></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Calorias da Refeição</h2>
+        
+        <label>Prato: </label>
+        <select id="prato">
+            <option>Escolha</option>
+            <option value="180">Vegetariano (180 cal)</option>
+            <option value="230">Peixe (230 cal)</option>
+            <option value="250">Frango (250 cal)</option>
+            <option value="350">Carne (350 cal)</option>
+        </select><br><br>
+
+        <label>Sobremesa: </label>
+        <select id="sobremesa">
+            <option>Escolha</option>
+            <option value="75">Abacaxi (75 cal)</option>
+            <option value="110">Sorvete diet (110 cal)</option>
+            <option value="170">Mouse diet (170 cal)</option>
+            <option value="200">Mouse chocolate (200 cal)</option>
+        </select><br><br>
+
+        <label>Bebida: </label>
+        <select id="bebida">
+            <option>Escolha</option>
+            <option value="20">Chá (20 cal)</option>
+            <option value="70">Suco de laranja (70 cal)</option>
+            <option value="100">Suco de melão (100 cal)</option>
+            <option value="65">Refrigerante diet (65 cal)</option>
+        </select><br><br>
+
+        <button onclick="calcular()">Calcular</button>
+    
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>

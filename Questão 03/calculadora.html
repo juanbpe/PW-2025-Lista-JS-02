@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora IMC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="img/calculator.ico">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='calculadora.js'></script>
+</head>
+<body>
+    <div class="telacheia">
+        <div class="calculadora">
+            <h2>Calculadora de IMC</h2>
+            <div class="dados">
+                <label>Altura</label> <br>
+                <input type="number" name="altura" placeholder="Metros" id="altura"> <br><br>
+                <label>Peso</label> <br>
+                <input type="number" name="peso" placeholder="Quilos" id="peso"> <br><br>
+            </div>
+            <div class="calculo">
+                <button onclick="calculo()">Calcular</button> <br><br>
+            </div>
+            <div id="imc"></div> <br><br>
+            <div id="estado"></div>
+        </div>
+    </div>
+</body>
+</html>
